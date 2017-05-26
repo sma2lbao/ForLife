@@ -1,0 +1,23 @@
+
+html,body{width: 100%;height: 100%;overflow: hidden;font-family: avenir;}
+* {margin: 0;padding: 0;box-sizing: border-box;}
+i {background-size: contain !important;}
+
+.user{background: url('../../static/user.png') no-repeat center center;}
+.password{background: url('../../static/password.png') no-repeat center center;}
+.email{background: url('../../static/email.png') no-repeat center center;}
+.phone{background: url('../../static/phone.png') no-repeat center center;}
+.address{background: url('../../static/address.png') no-repeat center center;}
+.twitter{background: url('../../static/twitter.png') no-repeat center center;}
+.calendar{background: url('../../static/calendar.png') no-repeat center center;}
+.time{background: url('../../static/time.png') no-repeat center center;}
+.location{background: url('../../static/location.png') no-repeat center center;}
+.people{background: url('../../static/people-plus.png') no-repeat center center;}
+.notice{background: url('../../static/notification.png') no-repeat center center;}
+.droplet{background: url('../../static/droplet.png') no-repeat center center;}
+.birthday{background: url('../../static/birthday.png') no-repeat center center;}
+
+.btm-btn{width: 1.49rem /* 112/75 */;height: 1.49rem /* 112/75 */;line-height: 1.49rem /* 112/75 */;border-radius: 50%;background-color: #f36;position: fixed;bottom: .4rem /* 30/75 */;left: 50%;margin-left: -.75rem /* 56/75 */;text-align: center;}
+.btm-btn i{display: inline-block;width: .8rem /* 60/75 */;height: 100%;}
+.plus-white{background: url('../../static/plus-white.png') no-repeat center center;}
+.filter-white{background: url('../../static/filter-white.png') no-repeat center center;}
