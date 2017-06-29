@@ -1,6 +1,7 @@
 <template lang="html">
-  <article class="">
+  <article class="" style="height: 100%;">
     <FLHead @listenLeft="showMenu()" leftIcon="menu" headText="Lists" rightIcon1="search" />
+
     <section>
       <div class="lists-bg">
         <span><i class="left-small"></i></span>
@@ -11,12 +12,9 @@
         <span><i class="right-small"></i></span>
       </div>
     </section>
-    <section>
-      <div class="lists-ls check">
-        <i class="l-check"></i><span>Fruit Salad</span>
-      </div>
-      <div class="lists-ls uncheck">
-        <i class="l-uncheck"></i><span>Fruit Salad</span>
+    <section class="calcLstHei">
+      <div v-for="(item, index) in salad" class="lists-ls" :class="item.statu ? 'check' : 'uncheck'" >
+        <i :class="item.statu ? 'l-check' : 'l-uncheck'" @click="toggleStatu(item)"></i><span>{{ item.text }}</span>
       </div>
     </section>
   </article>
@@ -28,6 +26,11 @@ import {mapMutations} from 'vuex'
 export default {
   name: 'lists',
   components: {FLHead, },
+  data: function () {
+    return({
+      salad: [{statu: false, text: '草莓'}, {statu: true, text: '苹果'}, {statu: true, text: '西瓜'}]
+    })
+  },
   mounted: function () {
     const loginStatu = this.$store.state.isLogin;
     if(!loginStatu) {
@@ -39,6 +42,9 @@ export default {
     showMenu: function () {
       this.TOGGLEMENU();
     },
+    toggleStatu: function (item) {
+      item.statu = !item.statu
+    }
   }
 }
 </script>
@@ -59,4 +65,5 @@ export default {
 .l-uncheck{background: url('../../static/l-uncheck.png') no-repeat center center;}
 .lists-ls.check{color: #999;}
 .lists-ls.uncheck{color: #fff;}
+.calcLstHei{height: calc(100% - 5.07rem) /* 380/75 */;overflow: auto;}
 </style>

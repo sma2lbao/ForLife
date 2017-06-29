@@ -16,7 +16,7 @@
       <FLList2 left="user" keyV="NAME" valV="李观保" right="" />
       <FLList2 left="email" keyV="EMAIL" valV="sma2lbao@qq.com" right=""  />
       <FLList2 left="password" keyV="PASSWORD" valV="Sma2lBao" right=""  />
-      <FLList2 left="phone" keyV="PHONE" valV="187-0581-2021" right=""  />
+      <FLList2 left="phone" keyV="PHONE" valV="176-0581-2021" right=""  />
       <FLList2 left="address" keyV="ADDRESS" valV="杭州市-滨江区-长江西苑" right=""  />
       <FLList2 left="twitter" keyV="TWIRRER" valV="Sma2lBao" right=""  />
     </section>

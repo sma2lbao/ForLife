@@ -1,44 +1,45 @@
 <template lang="html">
-  <article class="">
+  <article class="" style="height: 100%;">
     <FLHead @listenLeft="showMenu()" leftIcon="menu" headText="Profile" rightIcon1="ellipses" />
-    <section class="profile-head">
-      <i class="left-small"></i>
-      <i class="right-small"></i>
-      <p class="profile-date">
-        <span>January</span><br>
-        <span>2016</span>
-      </p>
-      <div class="profile-img">
-        <img :src="this.$store.state.userHeadPicture" alt="" >
-      </div>
-    </section>
-    <section class="profile-info">
-      <div class="info-left white-color">
-        <div class="info-color"></div>
-      </div>
-      <div class="info-center">
-        <p class="tip">未完成</p>
-        <p class="count">14</p>
-      </div>
-      <div class="info-right">
-        <i class="lists"></i>
-      </div>
-    </section>
+    <aside class="calcHei">
+      <section class="profile-head">
+        <i class="left-small"></i>
+        <i class="right-small"></i>
+        <p class="profile-date">
+          <span>January</span><br>
+          <span>2016</span>
+        </p>
+        <div class="profile-img">
+          <img :src="this.$store.state.userHeadPicture" alt="" >
+        </div>
+      </section>
+      <section class="profile-info">
+        <div class="info-left white-color">
+          <div class="info-color"></div>
+        </div>
+        <div class="info-center">
+          <p class="tip">未完成</p>
+          <p class="count">14</p>
+        </div>
+        <div class="info-right">
+          <i class="lists"></i>
+        </div>
+      </section>
 
-    <section class="profile-info">
-      <div class="info-left green-color">
-        <div class="info-color"></div>
-      </div>
-      <div class="info-center">
-        <p class="tip">已完成</p>
-        <p class="count">34</p>
-      </div>
-      <div class="info-right">
-        <i class="lists"></i>
-      </div>
-    </section>
+      <section class="profile-info">
+        <div class="info-left green-color">
+          <div class="info-color"></div>
+        </div>
+        <div class="info-center">
+          <p class="tip">已完成</p>
+          <p class="count">34</p>
+        </div>
+        <div class="info-right">
+          <i class="lists"></i>
+        </div>
+      </section>
 
-    <section class="profile-info">
+      <section class="profile-info">
       <div class="info-left purple-color">
         <div class="info-color"></div>
       </div>
@@ -50,6 +51,7 @@
         <i class="lists"></i>
       </div>
     </section>
+    </aside>
   </article>
 </template>
 

@@ -30,11 +30,11 @@ export default {
   height: 100%;
   background-color: #000;
   background: url('../static/bg.png') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   overflow: auto;
   overflow-x: hidden;
 }
-.nav-page{width: 100%;height: 100%;z-index: 999;position: fixed;left: 0;bottom: 0;overflow: hidden;}
+.nav-page{width: 100%;height: 100%;z-index: 999;position: fixed;left: 0;bottom: 0;overflow: auto;}
 .nav-page-bg{width: 20%;height: 100%;position: fixed;top: 0;right: 0;}
 .trans-page{transform: translateX(80%);}
 </style>

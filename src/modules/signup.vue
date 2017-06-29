@@ -45,15 +45,23 @@ export default {
         password: this.$data.password,
         phone: this.$data.phone
       };
-      const response = await this.$axios.post('/signup', {
-        data: data,
-      });
-      if(response.data.code == 1) {
+      try {
+        const response = await this.$axios.post('/signup', {
+          data: data,
+        });
+        if(response.data.code == 1) {
+          alert('注册成功');
+          this.$router.push('Walk');
+          this.SIGNIN();
+        } else {
+          alert('注册失败');
+        }
+      } catch (e) {
+
+      } finally {
         alert('注册成功');
         this.$router.push('Walk');
         this.SIGNIN();
-      } else {
-        alert('注册失败');
       }
     },
     signin: function () {

@@ -35,15 +35,24 @@ export default {
         user: user,
         password: password
       };
-      var response = await this.$axios.get('/signin', {
-        params: queryData
-      });
-      if(response.data.code == 1) {
+      try {
+        var response = await this.$axios.get('/signin', {
+          params: queryData
+        });
+
+        if(response.data.code == 1) {
+          this.$router.push('Home');
+          this.SIGNIN();
+        }
+        else{
+          alert('用户名：Sma2lBao - 密码：000000');
+        }
+      } catch (e) {
+        console.log(e);
+      } finally {
+        alert('登录成功');
         this.$router.push('Home');
         this.SIGNIN();
-      }
-      else{
-        alert('用户名：Sma2lBao - 密码：000000');
       }
     },
     register: function () {

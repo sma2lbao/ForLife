@@ -108,7 +108,7 @@ export default {
 .overview-head .month{color: #fff;font-size: .93rem /* 70/75 */;}
 .overview-head .year{color: #666;font-size: .29rem /* 22/75 */;}
 .ov-list ul{width: 100%;overflow: hidden;}
-.ov-list li{height:7.47rem /* 560/75 */;width: 13.4%;display: inline-block;text-align: center;color: #fff;padding-top: .33rem /* 25/75 */;position: relative;}
+.ov-list li{height:7.47rem /* 560/75 */;width: 14.25%;display: inline-block;text-align: center;color: #fff;padding-top: .33rem /* 25/75 */;position: relative;float: left;}
 .ov-list li + li{background: url('../../static/divider-height.png') no-repeat center left;}
 .statu1{display: inline-block;position: absolute;width: .33rem /* 25/75 */;height: .33rem /* 25/75 */;border: .07rem /* 5/75 */ solid #50d2c2;border-radius: 50%;position: absolute;left: 50%;margin-left: -.17rem /* 12.5/75 */;top: 10%;}
 .statu2{display: inline-block;position: absolute;width: .33rem /* 25/75 */;height: .33rem /* 25/75 */;border: .07rem /* 5/75 */ solid #fff;border-radius: 50%;position: absolute;left: 50%;margin-left: -.17rem /* 12.5/75 */;top: 40%;}

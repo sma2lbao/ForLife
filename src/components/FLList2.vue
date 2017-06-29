@@ -36,7 +36,7 @@ export default {
 <style lang="css" scoped>
 .list2{width: 100%;height: 2rem /* 150/75 */;padding: .53rem /* 40/75 */ .67rem /* 50/75 */;position: relative;background: url('../../static/divider.png') no-repeat bottom center;}
 .leftIcon{display: inline-block;width: .67rem /* 50/75 */;height: .67rem /* 50/75 */;margin-right: .67rem /* 50/75 */;}
-.center{height: .93rem /* 70/75 */;overflow: hidden;width: calc(100% - 3.33rem /* 250/75 */);display: inline-block;}
+.center{height: .93rem /* 70/75 */;width: calc(100% - 3.33rem /* 250/75 */);display: inline-block;}
 .key{font-size: .27rem /* 20/75 */;vertical-align: super;color: #fff;}
 .val{font-size: .37rem /* 28/75 */;color: #999;}
 

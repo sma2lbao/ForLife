@@ -21,3 +21,4 @@ i {background-size: contain !important;}
 .btm-btn i{display: inline-block;width: .8rem /* 60/75 */;height: 100%;}
 .plus-white{background: url('../../static/plus-white.png') no-repeat center center;}
 .filter-white{background: url('../../static/filter-white.png') no-repeat center center;}
+.calcHei{height: calc(100% - 1.73rem) /* 130/75 */;overflow: auto;}

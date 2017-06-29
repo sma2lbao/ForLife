@@ -1,27 +1,29 @@
 <template lang="html">
-  <article class="">
+  <article class="" style="height: 100%">
     <FLHead @listenLeft="showMenu()" @listenIcon1="nextMonth()" @listenIcon2="preMonth()" leftIcon="menu" :headText="monthYear" rightIcon1="right" rightIcon2="left" />
-    <section class="date">
-      <span class="date-item date-week">Sun</span>
-      <span class="date-item date-week">Mon</span>
-      <span class="date-item date-week">Tue</span>
-      <span class="date-item date-week">Wed</span>
-      <span class="date-item date-week">Thu</span>
-      <span class="date-item date-week">Fri</span>
-      <span class="date-item date-week">Sat</span>
+    <aside class="calcHei">
+      <section class="date">
+        <span class="date-item date-week">Sun</span>
+        <span class="date-item date-week">Mon</span>
+        <span class="date-item date-week">Tue</span>
+        <span class="date-item date-week">Wed</span>
+        <span class="date-item date-week">Thu</span>
+        <span class="date-item date-week">Fri</span>
+        <span class="date-item date-week">Sat</span>
 
-      <span class="date-item" v-for="day in emptyDay"></span>
-      <span  class="date-item" v-for="day in monthDay" :class="activeDay == day ? 'active' : ''" @click="handleClick(day)">{{ day }}</span>
+        <span class="date-item" v-for="day in emptyDay"></span>
+        <span  class="date-item" v-for="day in monthDay" :class="activeDay == day ? 'active' : ''" @click="handleClick(day)">{{ day }}</span>
 
-    </section>
-    <section>
-      <FLList1 v-for="task in tasks" :leftIcon="task.leftIcon"
-      :centerTitle="task.centerTitle"
-      :centerSubTitle="task.centerSubTitle"
-      :rightText="task.rightText"
-      :rightIcon="task.rightIcon" />
+      </section>
+      <section>
+        <FLList1 v-for="task in tasks" :leftIcon="task.leftIcon"
+        :centerTitle="task.centerTitle"
+        :centerSubTitle="task.centerSubTitle"
+        :rightText="task.rightText"
+        :rightIcon="task.rightIcon" />
 
-    </section>
+      </section>
+    </aside>
     <aside class="btm-btn" @click="toList()">
       <i class="filter-white"></i>
     </aside>
@@ -160,4 +162,5 @@ export default {
 .date-week{color: #999;}
 .date-item.active{border-radius: 50%;background-color: #8e939c;}
 .date-item.event::after{content: "";display: inline-block;width: .16rem /* 12/75 */;height: .16rem /* 12/75 */;border: .04rem /* 3/75 */ solid #bbbec3;border-radius: 50%;position: absolute;bottom: .16rem /* 12/75 */;left: 50%;margin-left: -.12rem /* 9/75 */;}
+.calcHei{height: calc(100% - 1.73rem)  /* 130/75 */;overflow: auto;}
 </style>
