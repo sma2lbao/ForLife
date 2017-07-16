@@ -1,4 +1,4 @@
-import Vue from 'Vue'
+import Vue from 'vue'
 import axios from 'axios'
 
 axios.defaults.baseURL = 'http://119.23.50.36:3000/api/forlife'
